@@ -26,3 +26,14 @@ function crearItem(){
 function limpiarEntrada(){
     document.getElementById('amigo').value = '';
 }
+
+function sortearAmigo(){
+    if(amigos.length == 0){
+        alert('Lista vacía, por favor ingrese un nombre');
+    }
+    else{
+        let amigoSecreto = Math.floor(Math.random()*amigos.length);
+        let resultado = document.getElementById('resultado');
+        resultado.innerHTML= amigos[amigoSecreto];
+    }
+}
