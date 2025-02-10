@@ -8,5 +8,10 @@ function agregarAmigo(){
         amigos.push(amigoIngresado);
         alert('Nombre ingresado');
         console.log(amigos);
+        limpiarEntrada();
     }
+}
+
+function limpiarEntrada(){
+    document.getElementById('amigo').value = '';
 }
