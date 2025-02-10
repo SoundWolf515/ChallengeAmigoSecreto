@@ -6,8 +6,6 @@ function agregarAmigo(){
         alert('Por favor, inserte un nombre primero');
     }else{
         amigos.push(amigoIngresado);
-        alert('Nombre ingresado');
-        console.log(amigos);
         limpiarEntrada();
         crearItem();
     }
